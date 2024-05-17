@@ -4,6 +4,205 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity5">
+    tools:context=".MainActivity5"
+    android:background="#F8FEF3">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/relay_hind_semibold"
+        android:text="Control"
+        android:textColor="@color/green"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/relay_hind_semibold"
+        android:text="Home"
+        android:textColor="@color/green"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/relay_hind_semibold"
+        android:text="Monitor"
+        android:textColor="@color/green"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/relay_hind_medium"
+        android:text="Password:"
+        android:textColor="#257FDD"
+        android:textSize="33.5px"
+        android:translationX="36.8px"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="378dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/relay_hind_medium"
+        android:text="Pot Name:"
+        android:textColor="#257FDD"
+        android:textSize="33.5px"
+        android:translationX="36.8px"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="401dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kaka" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="201dp"
+        android:layout_height="176dp"
+        app:srcCompat="@drawable/component_3__removal_1"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/relay_hind_medium"
+        android:text="Username:"
+        android:textColor="#257FDD"
+        android:textSize="33.5px"
+        android:translationX="36.8px"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="306dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/relay_chewy_regular"
+        android:text="PROFILE PAGE"
+        android:textColor="#C1F6EB"
+        android:textSize="55px"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        tools:layout_editor_absoluteY="354dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/relay_hind_medium"
+        android:text="Plant Start:"
+        android:textColor="#257FDD"
+        android:textSize="33.5px"
+        android:translationX="36.8px"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <Button
+        android:id="@+id/button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="LOG OUT"
+        android:textColor="@color/black"
+        android:textSize="18.8px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="550dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#F8FEF3"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton3"
+        app:srcCompat="@drawable/daun" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#F8FEF3"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton3"
+        app:srcCompat="@drawable/page_6_screenshot_2024_04_13_101626_removebg_preview_2" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#F8FEF3"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:srcCompat="@drawable/hatiabuabu"
+        tools:layout_editor_absoluteY="788dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

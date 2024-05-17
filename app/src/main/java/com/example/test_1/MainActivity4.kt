@@ -10,7 +10,16 @@ class MainActivity4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
 
-        val secondActbutton = findViewById<Button>(R.id.next3)
+        binding.ButtonWater.setOnClickListener {setData()}
+        binding.buttonSetValue.setOnClickListen {setData()}
+        private fun setData(){
+            var pwmValue: Int = 0
+            try {
+                pwmValue = binding.editTextPWM.text
+            }
+
+
+            val secondActbutton = findViewById<Button>(R.id.next3)
         secondActbutton.setOnClickListener {
             val Intent = Intent(this,MainActivity5::class.java)
             startActivity(Intent)
