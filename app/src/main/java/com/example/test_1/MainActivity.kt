@@ -43,6 +43,14 @@ class MainActivity : AppCompatActivity() {
 
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
+        val signUpButton = findViewById<Button>(R.id.signup_button)
+
+        signUpButton.setOnClickListener {
+            // Navigate to SignUpActivity
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+        }
+
         val signInButton = findViewById<Button>(R.id.googlebutton)
         signInButton.setOnClickListener {
             signIn()
