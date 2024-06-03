@@ -111,10 +111,10 @@ tools:context=".MainActivity">
         android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintHorizontal_bias="0.823"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.844" />
+        app:layout_constraintVertical_bias="0.88" />
 
     <TextView
         android:id="@+id/textView5"
@@ -129,7 +129,7 @@ tools:context=".MainActivity">
         app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.847" />
+        app:layout_constraintVertical_bias="0.88" />
 
     <TextView
     android:id="@+id/textView6"
@@ -191,17 +191,47 @@ tools:context=".MainActivity">
 
     <Button
         android:id="@+id/verifybutton"
-        android:layout_width="183dp"
-        android:layout_height="44dp"
+        android:layout_width="131dp"
+        android:layout_height="32dp"
         android:backgroundTint="#25DDB9"
         android:fontFamily="@font/relay_league_spartan_black"
         android:text="V E R I F Y"
         android:textColor="#FFFF"
-        android:textSize="17sp"
+        android:textSize="10sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787" />
+        app:layout_constraintVertical_bias="0.772" />
+
+    <Button
+        android:background="@drawable/border"
+        android:id="@+id/googlebutton"
+        android:layout_width="131dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/relay_league_spartan_black"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.824"
+        app:srcCompat="@drawable/googleg_standard_color_18" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
