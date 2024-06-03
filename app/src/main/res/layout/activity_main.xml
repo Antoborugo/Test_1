@@ -101,20 +101,21 @@ tools:context=".MainActivity">
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="0.706" />
 
-    <TextView
-        android:id="@+id/textView4"
+    <Button
+        android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:fontFamily="@font/relay_hind_bold"
         android:text="Forgot Password?"
         android:textColor="@color/black"
         android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintHorizontal_bias="0.82"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.88" />
+        app:layout_constraintVertical_bias="0.897" />
 
     <TextView
         android:id="@+id/textView5"
@@ -206,8 +207,8 @@ tools:context=".MainActivity">
         app:layout_constraintVertical_bias="0.772" />
 
     <Button
-        android:background="@drawable/border"
         android:id="@+id/googlebutton"
+        android:backgroundTint="#c1f6eb"
         android:layout_width="131dp"
         android:layout_height="32dp"
         android:fontFamily="@font/relay_league_spartan_black"

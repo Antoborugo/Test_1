@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#0000"/> <!-- Change this to the color of your button -->
-    <corners android:radius="5dp"/> <!-- Change this to adjust the roundness of button corners -->
-    <stroke android:color="#A7C957" android:width="2dp"/> <!-- Change color to the color of your border and width to adjust the thickness of the border -->
-</shape>

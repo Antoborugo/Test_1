@@ -3,6 +3,8 @@ package com.example.test_1
 import android.app.ActivityManager
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -17,6 +19,8 @@ import com.google.firebase.auth.GoogleAuthProvider
 import com.google.android.gms.tasks.Task
 import androidx.activity.result.contract.ActivityResultContracts
 import com.google.firebase.FirebaseApp
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -25,6 +29,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         // Initialize Firebase
         FirebaseApp.initializeApp(this)
@@ -38,10 +43,29 @@ class MainActivity : AppCompatActivity() {
 
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
-        val signInButton = findViewById<Button>(R.id.verifybutton)
+        val signInButton = findViewById<Button>(R.id.googlebutton)
         signInButton.setOnClickListener {
             signIn()
         }
+
+// Add this to your onCreate method
+        val forgotPasswordButton = findViewById<Button>(R.id.forgot_password)
+        forgotPasswordButton.setOnClickListener {
+            val email = findViewById<Button>(R.id.email).text.toString()
+            if (email.isNotEmpty()) {
+                Firebase.auth.sendPasswordResetEmail(email)
+                    .addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
+                            Toast.makeText(this, "Reset link sent to your email.", Toast.LENGTH_LONG).show()
+                        } else {
+                            Toast.makeText(this, "Unable to send reset mail.", Toast.LENGTH_LONG).show()
+                        }
+                    }
+            } else {
+                Toast.makeText(this, "Please enter your email.", Toast.LENGTH_LONG).show()
+            }
+        }
+
     }
 
     private fun signIn() {
